@@ -1,0 +1,8 @@
+{
+  "specVersion": "1",
+  "files": [
+    {"id": "a", "source": "files/a.tmpl", "target": "a.txt", "dependsOn": ["c"]},
+    {"id": "b", "source": "files/b.tmpl", "target": "b.txt", "dependsOn": ["a"]},
+    {"id": "c", "source": "files/c.tmpl", "target": "c.txt", "dependsOn": ["b"]}
+  ]
+}

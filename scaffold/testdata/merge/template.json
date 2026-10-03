@@ -1,0 +1,6 @@
+{
+  "specVersion": "1",
+  "files": [
+    {"source": "files/config.tmpl", "target": "config.ini", "conflict": "merge"}
+  ]
+}

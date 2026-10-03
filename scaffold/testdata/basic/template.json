@@ -1,0 +1,16 @@
+{
+  "specVersion": "1",
+  "variables": [
+    {"name": "name", "type": "string", "required": true, "pattern": "^[a-z]+$"},
+    {"name": "count", "type": "int", "default": 1, "min": 1, "max": 10},
+    {"name": "color", "type": "enum", "default": "red", "values": ["red", "green", "blue"]},
+    {"name": "items", "type": "list", "itemType": "string", "default": []},
+    {"name": "flag", "type": "bool", "default": true}
+  ],
+  "files": [
+    {"id": "a", "source": "files/a.tmpl", "target": "out/{{.name}}.txt"},
+    {"id": "b", "source": "files/b.tmpl", "target": "out/b.txt", "dependsOn": ["a"]},
+    {"source": "files/c.tmpl", "target": "out/c.txt", "condition": "{{.flag}}"},
+    {"source": "files/item.tmpl", "target": "out/items/{{.item}}.txt", "each": "items"}
+  ]
+}

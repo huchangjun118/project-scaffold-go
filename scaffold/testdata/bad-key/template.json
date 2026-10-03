@@ -1,0 +1,6 @@
+{
+  "specVersion": "1",
+  "files": [
+    {"source": "files/a.tmpl", "target": "a.txt"}
+  ]
+}

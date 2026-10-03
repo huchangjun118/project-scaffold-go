@@ -1,0 +1,15 @@
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+// Module file: {{ref "go.mod"}}
+
+func main() {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "hello from {{.projectName}} on port {{.port}}")
+	})
+	http.ListenAndServe(":{{.port}}", nil)
+}

@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "vars": [
+    {"name": "name", "type": "string", "default": "world"}
+  ],
+  "files": [
+    {"source": "files/a.tmpl", "target": "a.txt"}
+  ]
+}

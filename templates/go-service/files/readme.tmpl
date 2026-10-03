@@ -1,0 +1,7 @@
+# {{.projectName}}
+
+A Go service (Go {{.goVersion}}) listening on port {{.port}}.
+
+- Entry point: {{ref "main"}}
+- Features:{{range .features}}
+  - {{.}}{{end}}

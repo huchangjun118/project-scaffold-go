@@ -1,0 +1,6 @@
+{
+  "specVersion": "1",
+  "files": [
+    {"id": "a", "source": "files/a.tmpl", "target": "a.txt", "dependsOn": ["ghost"]}
+  ]
+}

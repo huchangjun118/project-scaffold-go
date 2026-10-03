@@ -1,0 +1,7 @@
+{
+  "specVersion": "1",
+  "bogusField": 42,
+  "files": [
+    {"source": "files/a.tmpl", "target": "a.txt"}
+  ]
+}
